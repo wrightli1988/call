@@ -1,0 +1,18 @@
+<html5>
+<script type="text/javascript">
+function getQueryString(name)
+{
+    var url = window.location.search;
+    var reg = new RegExp('(^|&)'+ name +'=([^&]*)(&|$)','i');
+    var r = url.substr(1).match(reg);
+    if (r != null) return decodeURI(r[2]); return null;
+}
+</script>
+<head>
+<meta name="format-detection" content="telephone=yes"/>
+</head>
+
+<script type="text/javascript">
+window.location.href = "tel://" + getQueryString("a");
+</script>
+</html5>
