@@ -38,7 +38,7 @@ window.alert = function(name){
         window.frames[0].window.alert(name);
         iframe.parentNode.removeChild(iframe);
     };
- var result = confirm('老K提醒您:是否需要通知车主挪车？')
+ var result = confirm('老K提醒您：是否需要通知车主挪车？')
     if(result){
             window.location.href = "tel://" + getQueryString("a");
     }else{
