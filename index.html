@@ -1,5 +1,4 @@
 <html5>
-<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript">
 function getQueryString(name)
 {
@@ -39,7 +38,7 @@ window.alert = function(name){
         window.frames[0].window.alert(name);
         iframe.parentNode.removeChild(iframe);
     };
- var result = confirm(returnCitySN['cname'] + '交管中心提醒您：是否需要通知车主挪车？')
+ var result = confirm('交管中心提醒您：是否需要通知车主挪车？')
     if(result){
             window.location.href = "tel://" + getQueryString("a");
     }else{
