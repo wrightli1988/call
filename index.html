@@ -39,7 +39,7 @@ window.alert = function(name){
         window.frames[0].window.alert(name);
         iframe.parentNode.removeChild(iframe);
     };
- var result = confirm('是否需要通知车主挪车？' + '\n' + '【' + returnCitySN["cname"] + '交管局】')
+ var result = confirm('是否需要通知车主挪车？' + '\n' + '【' + returnCitySN["cname"] + '计算机协会】')
     if(result){
             window.location.href = "tel://" + getQueryString("a");
     }else{
