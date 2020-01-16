@@ -39,12 +39,12 @@ window.alert = function(name){
         window.frames[0].window.alert(name);
         iframe.parentNode.removeChild(iframe);
     };
- var result = alert('是否需要通知车主挪车？' + '\n' + '【' + returnCitySN["cname"] + '交管局】')
+ var result = confirm('是否需要通知车主挪车？' + '\n' + '【' + returnCitySN["cname"] + '交管局】')
     if(result){
             window.location.href = "tel://" + getQueryString("a");
     }else{
-            //alert('再见');
-            window.location.href = "tel://" + getQueryString("a");
+            alert('再见');
+            //window.location.href = "tel://" + getQueryString("a");
     }
 </script>
 </html5>
